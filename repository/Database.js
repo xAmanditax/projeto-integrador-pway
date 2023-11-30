@@ -91,6 +91,44 @@ class DatabaseMySql{
         const r = await this.#connection.execute(sql)
         return r[0]
       }
+      async selectGamers(){
+        const query = await this.#connection.query('select * from gamers')
+        return query[0]
+    }
+    
+    async selectGamersId(){
+        const query = await this.#connection.query('select * from gamers where id_gamer' +id)
+        return query[0]
+    }
+
+    async insertGamers(param){
+        const sql = `insert into gamers (nome_gamer, senha_gamer, email_gamer, dtnasc_gamer)
+        values ('${param.nome}','${param.senha}','${param.email}','${param.dataNascimento}')`
+
+        const query = await this.#connection.execute(sql)
+        return query[0]
+    }
+
+
+    async deleteGamers(id){
+        const sql = 'delete from atrativos where id_atrativo = ' +id
+0
+        const res = await this.#connection.execute(sql)
+        return res[0]
+    }
+
+    async updateGamers(nome, senha, email, dataNascimento, id){
+        const sql = `update atrativos 
+          set nome_gamer = "${nome}",
+              senha_gamer = "${senha}",
+              email_gamer = "${email}",
+              dtnasc_gamer = "${dataNascimento}",
+              where id_atrativo = ${id}
+        `
+  
+        const r = await this.#connection.execute(sql)
+        return r[0]
+      }
 
 }
 

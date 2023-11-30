@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../public/css/criar.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <form action="criar.html" method="post">
+
+        <h1>Cadastrar-se</h1>
+
+        <fieldset>
+            <legend><span class="number">1</span>Informações Básicas</legend>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="user_name">
+
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email">
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="user_password">
+
+            <label>Data de Nascimento:</label>
+            <input type="date" id="date" name="user_password">
+        </fieldset>
+
+        <fieldset>
+            <legend><span class="number">2</span>Seu perfil</legend>
+            <label for="job">Personagem:</label>
+            <select id="job" name="user_job">
+                <optgroup label="Genêro do Personagem">
+                    <option value="frontend_developer">Feminino</option>
+                    <option value="php_developor">Masculino</option>
+                </optgroup>
+                <optgroup label="Tipo do Personagem">
+                    <option value="iOS_developer">Mago</option>
+                </optgroup>
+            </select>
+
+            <label>Moeda:</label>
+            <input type="checkbox" id="development" value="interest_development" name="user_interest" checked><label
+                class="light" for="development">Oncy</label><br>
+        </fieldset>
+        <button type="submit" href="cadastro.html">Criar</button>
+    </form>
+
+</body>
+
+</html>
+</body>
+
+</html>
