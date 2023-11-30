@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Descontos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<style>
+    .row .btn-warning a {
+      list-style: none;
+      color: black;
+      text-decoration: none;
+      border: rgb(248, 247, 168) 2px dotted;
+      font-size: 20px;
+      font-weight: 500;
+      background-color: rgba(231, 231, 134, 0.4);
+    }
+  </style>
+<body>
+    <body>
+        <main>
+            <section id="cadcupt">
+                <h2>Cadastrar Descontos</h2>
+                <form action="/pagina/caddescontos" method="post">
+            <div class="row">
+                <div class="col">
+                    <label for="txtnomedesco" class="form-label">Imagem</label>
+                    <input type="text" name="txtnomedesco" id="txtnomedesco" class="form-control" tabindex="1">
+                </div> 
+                <div class="col">
+                    <label for="txtcoddesco" class="form-label">Código</label>
+                    <input type="text" name="txtcoddesco" id="txtcoddesco" class="form-control" tabindex="2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="txtvaldesco" class="form-label">Valor</label>
+                    <input type="text" name="txtvaldesco" id="txtvaldesco" class="form-control" tabindex="3">
+                </div>
+                <div class="col">
+                    <label for="txtvalidesco" class="form-label">Validade</label>
+                    <input type="datetime-local" name="txtvalidesco" id="txtvalidesco" class="form-control" tabindex="4">
+                </div>
+            <div class="row">
+                <div class="col">
+                <input type="submit" a href="/pagina/caddescontos" value="Cadastrar" name="btcaddesco" id="btcaddesco" class="btn btn-warning mt-4" tabindex="4">
+            </div>
+            </div>
+        </form>
+        </section>
+        </main>
+    
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    
+</body>
+</html>
